@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Kinetika';
+  src: url('../fonts/Kinetika-Regular.eot');
+  src: local('Kinetika'), local('Kinetika-Regular'),
+  url('../fonts/Kinetika-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Kinetika-Regular.woff2') format('woff2'),
+  url('../fonts/Kinetika-Regular.woff') format('woff'),
+  url('../fonts/Kinetika-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kinetika';
+  src: url('../fonts/Kinetika-Medium.eot');
+  src: local('Kinetika Medium'), local('Kinetika-Medium'),
+  url('../fonts/Kinetika-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Kinetika-Medium.woff2') format('woff2'),
+  url('../fonts/Kinetika-Medium.woff') format('woff'),
+  url('../fonts/Kinetika-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kinetika';
+  src: url('../fonts/Kinetika-SemiBold.eot');
+  src: local('Kinetika Semi Bold'), local('Kinetika-SemiBold'),
+  url('../fonts/Kinetika-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Kinetika-SemiBold.woff2') format('woff2'),
+  url('../fonts/Kinetika-SemiBold.woff') format('woff'),
+  url('../fonts/Kinetika-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}

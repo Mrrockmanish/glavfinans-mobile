@@ -1,0 +1,4 @@
+mixin textarea(label, adClass)
+    div(class=`relative flex flex-col border border-91 rounded-lg h-28 ${adClass}`)
+        textarea(required type="text" name="" class=`style-input z-10 flex-grow relative mt-5 mb-2 pt-1 pb-2 pl-4 pr-5 text-sm w-full bg-transparent resize-none`)
+        label(class="style-input-label absolute text-base text-gray flex items-center")= label

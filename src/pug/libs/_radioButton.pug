@@ -1,0 +1,5 @@
+mixin radioButton(name, text)
+    label(class='inline-flex items-center cursor-pointer')
+        input(name=`${name}` type='radio' class='radio-blue hidden flex-shrink-0')
+        span(class='radio-blue-custom block rounded-full w-6 h-6 mr-3')
+        span(class='text-base')= text

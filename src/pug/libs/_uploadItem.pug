@@ -1,0 +1,10 @@
+mixin uploadItem(text,name)
+    div(class="upload-item border border-91 rounded-lg py-3 px-5")
+        div(class='flex items-center justify-between')
+            div(class="text-base text-87")= text
+            label
+                input(type="file" name=`${name}` accept="image/*" class="hidden input-upload")
+                img(src=require('./images/elements/plus.svg') class="upload-item__plus hover:opacity-80 cursor-pointer")
+            img(src=require('./images/elements/cancel.svg') class="upload-item__cancel hidden hover:opacity-80 cursor-pointer")
+        div(class="show-img hidden pt-4 pb-2")
+            img()

@@ -1,0 +1,8 @@
+mixin scale(value)
+    div(class='flex items-center justify-between')
+        div(class='text-sm')
+            span Вероятность одобрения&nbsp;
+            span(class='text-blue') +10%
+        div(class="text-sm text-87") 1 шаг из 4
+    div(class='scale mt-2 h-4 rounded-[2.5rem]')
+        div(class='rounded-[2.5rem] bg-blue h-full' style=`width: ${value}%`)

@@ -1,0 +1,9 @@
+mixin inputEdit(text, adClass, value)
+    div(class="relative border border-91 flex items-center justify-between rounded-lg py-2 pl-4 pr-5 h-14")
+        div(class="flex items-center w-full")
+            input(required value=`${value}` type="text" name="example" class=`style-input ${adClass} relative mt-2 text-base w-full z-10 bg-transparent`)
+            <svg class="input-edit-icon flex-shrink-0 cursor-pointer" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.6238 3.48806L12.2939 2.23643L13.2536 1.33322L13.2536 1.33321C13.3779 1.21622 13.5528 1.21622 13.6771 1.33321L14.6276 2.22777C14.6276 2.22778 14.6276 2.22779 14.6276 2.2278C14.6925 2.28886 14.7079 2.34618 14.7079 2.38554C14.7079 2.42489 14.6925 2.48221 14.6276 2.54327C14.6276 2.54328 14.6276 2.54329 14.6276 2.5433L13.6238 3.48806ZM1.66857 13.465L1.8143 12.7564L2.42146 13.3279L1.66857 13.465ZM12.2606 4.77108L4.11881 12.4339L2.78894 11.1823L10.9307 3.51943L12.2606 4.77108Z" fill="#0D4DA1" stroke="#0D4DA1"/>
+            <line y1="15.5" x2="14" y2="15.5" stroke="#0D4DA1"/>
+            </svg>
+            label(class="style-input-label absolute text-base text-gray flex items-center")= text
