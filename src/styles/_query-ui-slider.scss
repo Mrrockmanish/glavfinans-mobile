@@ -121,7 +121,7 @@
   height: .8em;
 }
 .ui-slider-horizontal .ui-slider-handle {
-  top: -.6em;
+  top: -.65em;
   margin-left: -.6em;
 }
 .ui-slider-horizontal .ui-slider-range {
@@ -203,7 +203,7 @@
   works properly when clicked or hovered */
 html .ui-button.ui-state-disabled:hover,
 html .ui-button.ui-state-disabled:active {
-  border: 5px solid #0D4DA1;
+  border: 0.25rem solid #0D4DA1;
   background: #ffffff;
   font-weight: normal;
   color: #ffffff;

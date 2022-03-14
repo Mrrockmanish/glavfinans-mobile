@@ -20,6 +20,17 @@ $root-font-size: 16;
 html {
   font-family: 'Kinetika';
   font-size: 100%;
+
+  @media (min-width: 375px) {
+    font-size: 105%;
+  }
+
+  @media (min-width: 470px) {
+    font-size: 130%;
+  }
+  @media (min-width: 768px) {
+    font-size: 150%;
+  }
 }
 
 body {
@@ -27,14 +38,13 @@ body {
   font-size: s(14);
   font-weight: 400;
   word-wrap: break-word;
-  line-height: 1.33;
+  line-height: 1.14;
 }
 
 
 .container {
   padding: 0 1rem;
   margin: 0 auto;
-  min-width: 1180px;
 }
 
 a {
@@ -54,7 +64,7 @@ a {
   }
 
   p {
-    @apply mb-4
+    @apply mb-2
   }
 
   input, textarea, button {
@@ -315,4 +325,9 @@ a {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.logo-mobile {
+  width: s(84);
+  height: s(27);
 }
