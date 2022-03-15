@@ -43,8 +43,10 @@ body {
 
 
 .container {
-  padding: 0 1rem;
-  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 a {
@@ -57,14 +59,14 @@ a {
   }
 
   h1 {
-    @apply text-[2rem];
+    @apply text-2xl;
   }
   h2 {
-    @apply text-2xl;
+    @apply text-lg;
   }
 
   p {
-    @apply mb-2
+    @apply mb-3
   }
 
   input, textarea, button {
@@ -158,7 +160,7 @@ a {
   &::before {
     content: url("../images/elements/check.svg");
     display: block;
-    height: s(25);
+    height: s(16);
   }
 }
 
@@ -178,6 +180,7 @@ a {
   &__text {
     display: none;
     transition: .3s;
+    transform: translateX(-50%);
   }
 
   &:hover {
@@ -190,6 +193,7 @@ a {
 .white-container-dialog {
   background: rgba(89, 89, 89, 0.5);
   backdrop-filter: blur(4px);
+  padding: 1rem;
 }
 
 .rotate-x-180 {
@@ -198,7 +202,7 @@ a {
 
 .style-input-label {
   left: s(16);
-  top: s(15);
+  top: s(18);
   white-space: nowrap;
   overflow: hidden;
   transition: .3s;
@@ -208,8 +212,8 @@ a {
 .style-input:focus ~ .style-input-label,
 .style-input:not(:focus):valid ~ .style-input-label,
 .style-input.readonly ~ .style-input-label {
-  top: 0;
-  font-size: s(12);
+  top: s(2);
+  font-size: s(10);
 }
 
 .style-input:not(:focus):valid ~ .style-input-label {
@@ -286,12 +290,12 @@ a {
 }
 
 .short-logo {
-  border-radius: 1rem;
+  border-radius: s(4);
   &__center {
-    width: s(50);
-    height: s(50);
-    top: s(36);
-    left: s(36);
+    width: s(25);
+    height: s(25);
+    top: s(20);
+    left: s(20);
     animation-name: clock;
     animation-iteration-count: infinite;
     animation-duration: 6s;

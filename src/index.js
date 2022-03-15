@@ -7,7 +7,7 @@ import mask from '../node_modules/jquery.maskedinput/src/jquery.maskedinput'
 
 
 $('.phone-mask').mask("+7(999) 999-9999");
-$('.pass-serial-mask').mask("9999");
+$('.serial-and-number').mask("9999 999999");
 $('.pass-number-mask').mask("999999");
 $('.date-mask').mask("99.99.9999");
 $('.pass-code-mask').mask("999-999");

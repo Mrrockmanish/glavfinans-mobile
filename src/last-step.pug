@@ -1,0 +1,28 @@
+extends main
+
+block content
+    main(class='relative pt-8 pb-24')
+        div(class='container')
+            +title('Остался последний шаг')
+            div(class="bg-white shadow-plate mt-4 rounded-20px p-6 px-5")
+                h2(class="font-semibold text-lg mb-2") Ознакомьтесь с документами
+                div
+                    p(class='text-gray') Подпишите документы с помощью СМС кода
+                div(class="grid gap-y-4 mt-3")
+                    a(href="#" class="flex items-start max-w-[18rem] hover:opacity-80")
+                        img(src=require('./images/elements/document.svg') class="flex-shrink-0 mr-4")
+                        div(class="text-sm text-black") Общие условия договора
+                    a(href="#" class="flex items-start max-w-[18rem] hover:opacity-80")
+                        img(src=require('./images/elements/document.svg') class="flex-shrink-0 mr-4")
+                        div(class="text-sm text-black") Шаблон индивидуальных условий договора
+                    a(href="#" class="flex items-start max-w-[18rem] hover:opacity-80")
+                        img(src=require('./images/elements/document.svg') class="flex-shrink-0 mr-4")
+                        div(class="text-sm text-black") Заявка на предоставление займа
+            form(class='mt-8')
+                div
+                    +input('Код из СМС')
+                    +inputCaption('Направили СМС на номер +7 928 468 20 61')
+                div(class="mt-6")
+                    +btnGradient('Подтверждаю')
+            div(class='text-center mt-4')
+                a(href='#' class='text-base text-center font-semibold hover:opacity-80') Получить новый код через 30 сек

@@ -1,0 +1,22 @@
+extends main
+
+block content
+    main(class='relative pt-8 pb-24')
+        div(class='container')
+            +title('Личный кабинет')
+            div(class="text-lg font-semibold mt-3") Вход для клиентов
+            form(class="mt-4")
+                div(class="grid gap-y-4")
+                    div
+                        +input('Номер телефона', 'phone-mask')
+                        +inputCaption('Укажите тот номер, с которого вы оформляли заявку')
+                    div
+                        +input('Пароль')
+                        +inputCaption('Введите ваш пароль')
+                div(class="mt-8")
+                    +btnGradient('Войт в аккаунт')
+            div(class='text-center mt-4')
+                a(href='#' class='text-base text-center hover:opacity-80') Забыли пароль?
+            div(class='text-sm text-center font-semibold mt-6')
+                span Еще нет аккаунта?&nbsp;
+                a(href='#' class='text-blue underline hover:opacity-80') Зарегестрируйтесь

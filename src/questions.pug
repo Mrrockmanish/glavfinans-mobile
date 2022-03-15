@@ -1,0 +1,15 @@
+extends main
+
+block content
+    main(class='relative pt-8 pb-24')
+        div(class='container')
+            div(class='bg-white rounded-20px shadow-plate text-center px-4 py-6')
+                h1(class='text-2xl font-semibold') Рассмотрим вашу&nbsp;заявку
+                div(class='text-87 mt-4')
+                    p Возможно, в процессе рассмотрения мы попросим ответить на дополнительные вопросы, не закрывайте эту страницу
+                div(class='mt-4')
+                    include pug/_short-logo
+            div(class='mt-8')
+                h3(class='text-lg font-semibold') Ответы на частые вопросы
+            div(class='mt-4')
+                include pug/_questions-block
