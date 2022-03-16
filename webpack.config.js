@@ -77,6 +77,50 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'entry.html',
       template: "./src/entry.pug"
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'lk-my-loans.html',
+      template: "./src/lk-my-loans.pug"
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'lk-restructure.html',
+      template: "./src/lk-restructure.pug"
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'lk-my-data.html',
+      template: "./src/lk-my-data.pug"
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'lk-actions.html',
+      template: "./src/lk-actions.pug"
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'lk-alerts.html',
+      template: "./src/lk-alerts.pug"
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'lk-contacts.html',
+      template: "./src/lk-contacts.pug"
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'lk-mails.html',
+      template: "./src/lk-mails.pug"
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'how-get.html',
+      template: "./src/how-get.pug"
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'how-pay.html',
+      template: "./src/how-pay.pug"
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'q-and-a.html',
+      template: "./src/q-and-a.pug"
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'type.html',
+      template: "./src/type.pug"
     })
   ],
   module: {

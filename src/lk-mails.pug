@@ -1,0 +1,27 @@
+extends main
+
+block content
+    main(class='relative pt-8 pb-24')
+        div(class='container')
+            h1(class="text-2xl font-semibold") Соломыкин Артём Андреевич
+            h4(class='text-base font-semibold mt-4') Связаться с нами
+            div(class='bg-white shadow-plate rounded-20px font-semibold px-4 pt-4 pb-8 mt-4')
+                div(class='text-blue') Непрочитанное
+                div(class='flex text-xs border-b border-C4 pb-1 mt-2')
+                    div(class='mr-3') 05.03.2019
+                    div 20:59:32
+                div(class='flex items-start mt-4')
+                    img(src=require('./images/elements/document2.svg') alt='' class='w-6 h-8 mr-4 mt-1')
+                    div(class='text-base font-semibold') Досудебная претензия Ноздрякова О.Н. от 18.03.2019.pdf
+                div(class='mt-4')
+                    +lk-btn('Скачть файл')
+            div(class='bg-white shadow-plate rounded-20px px-4 pt-4 pb-8 mt-4')
+                div(class='flex text-xs border-b border-C4 pb-1 mt-2')
+                    div(class='mr-3') 05.03.2019
+                    div 20:59:32
+                div(class='flex items-start mt-4')
+                    img(src=require('./images/elements/document2.svg') alt='' class='w-6 h-8 mr-4 mt-1')
+                    div(class='text-base') Ответ Ноздряковой от 18.03.2019.pdf
+                div(class='mt-4')
+                    +lk-btn('Скачть файл')
+

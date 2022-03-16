@@ -1,0 +1,26 @@
+extends main
+
+block content
+    main(class='relative pt-8 pb-24')
+        div(class='container')
+            h1(class="text-2xl font-semibold") Соломыкин Артём Андреевич
+            h4(class='text-base font-semibold mt-4') Уведомления
+            div(class='mt-4 grid gap-y-6')
+                div(class='bg-white shadow-plate rounded-20px px-4 pt-4 pb-8')
+                    h3(class='text-lg font-medium leading-tight mb-2') Скоро дата погашения займа
+                    div(class='text-gray')
+                        p Чтобы не выйти на просрочку, рекомендуем как можно скорее погасить задолженность
+                    div(class='mt-6')
+                        +lk-btn-blue('Оплатить 6500 руб')
+                div(class='bg-white shadow-plate rounded-20px px-4 pt-4 pb-8')
+                    h3(class='text-lg font-medium leading-tight mb-2') Ваша заявка на займ одобрена
+                    div(class='text-gray')
+                        p Взаимодействовать с займом можно в личном кабинете
+                    div(class='mt-6')
+                        +lk-btn('Перейти в личный кабинет')
+                div(class='bg-white shadow-plate rounded-20px px-4 pt-4 pb-8')
+                    h3(class='text-lg font-medium leading-tight mb-2') Ваш займ погашен
+                    div(class='text-gray')
+                        p Взаимодействовать с займом можно в личном кабинете
+                    div(class='mt-6')
+                        +lk-btn('Взять новый займ')

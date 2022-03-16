@@ -1,0 +1,101 @@
+extends main
+
+block content
+    main(class='relative pt-8 pb-24')
+        div(class='container')
+            h1(class="text-2xl font-semibold") Соломыкин Артём Андреевич
+            h4(class='text-base font-semibold mt-4') Реструктуризация
+            div(class='bg-white shadow-plate rounded-20px px-4 pt-4 pb-8 mt-8')
+                h3(class='text-xl font-semibold') Займ по договору №12312849109
+                div(class='flex items-start mt-5')
+                    img(src=require('./images/elements/alert.svg') class='mr-2.5 mt-1')
+                    div(class='text-base leading-tight')
+                        span Статус:&nbsp;
+                        span(class='font-semibold') Просрочен на 31 день
+                div(class='text-gray text-base max-w-[40rem] mt-4')
+                    p Для оформления реструктуризации оплатите начисленные на текущую дату проценты на сумму <strong>2400</strong> руб
+                    p Оставшуюся задолженность необходимо погашать по следующему графику
+                h4(class='text-base font-semibold mt-5') График платежей
+                div(class='max-w-[34rem] overflow-auto pb-3 mt-4')
+                    table(class='lk-table min-w-[28rem] text-sm text-gray text-center w-full')
+                        thead
+                        tr
+                            td №
+                            td Дата платежа
+                            td Сумма платежа, ₽
+                            td Остаток долга
+                        tbody
+                            tr
+                                td 1
+                                td 28.08.21
+                                td 4000
+                                td 4000
+                            tr
+                                td 2
+                                td 28.08.21
+                                td 4000
+                                td 4000
+                            tr
+                                td 3
+                                td 28.08.21
+                                td 15000
+                                td 4000
+                            tr
+                                td 4
+                                td 28.08.21
+                                td 15000
+                                td 4000
+                            tr
+                                td 5
+                                td 28.08.21
+                                td 4000
+                                td 4000
+                            tr
+                                td 6
+                                td 28.08.21
+                                td 4000
+                                td 4000
+                div(class='max-w-[34rem] overflow-auto pb-3 mt-4')
+                    table(class='lk-table lk-table_xs text-xs text-gray text-center w-full')
+                        thead
+                        tr
+                            td №
+                            td Дата платежа
+                            td Сумма платежа, ₽
+                            td Остаток долга
+                        tbody
+                            tr
+                                td 1
+                                td 28.08.21
+                                td 4000
+                                td 4000
+                            tr
+                                td 2
+                                td 28.08.21
+                                td 4000
+                                td 4000
+                            tr
+                                td 3
+                                td 28.08.21
+                                td 15000
+                                td 4000
+                            tr
+                                td 4
+                                td 28.08.21
+                                td 15000
+                                td 4000
+                            tr
+                                td 5
+                                td 28.08.21
+                                td 4000
+                                td 4000
+                            tr
+                                td 6
+                                td 28.08.21
+                                td 4000
+                                td 4000
+                div(class='mt-6')
+                    div(class='mt-4')
+                        +lk-btn-blue('Оформить реструктуризацию')
+                    div(class='mt-4')
+                        +lk-btn('Погасить всю задолженность')

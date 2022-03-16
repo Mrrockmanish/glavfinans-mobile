@@ -1,0 +1,50 @@
+extends main
+
+block content
+    main(class='relative pt-8 pb-24')
+        div(class='container')
+            h1(class="text-2xl font-semibold") Соломыкин Артём Андреевич
+            h4(class='text-base font-semibold mt-4') Личные данные
+            div(class="grid gap-y-4 mt-6")
+                div
+                    h3(class="font-semibold text-lg") Паспорт
+                    div(class="mt-2")
+                        +inputReadOnly("Фамилия Имя Отчество",'readonly', 'Соломыкин Артем Андреевич')
+                div
+                    +inputReadOnly("Серия и номер",'readonly', '0311 521125')
+                div
+                    +inputReadOnly("Дата выдачи",'readonly', '12.05.2005')
+                div
+                    +inputReadOnly("Код подразделения",'readonly', '010-001')
+                div
+                    +inputReadOnly("Кем выдан",'readonly', 'Отделом МВД по краснодарскому кра|')
+                div
+                    +inputReadOnly("Дата рождения",'readonly', '03.03.1992')
+                div
+                    +inputReadOnly("Место рождения",'readonly', 'Город Долинск сахалинской области')
+                div
+                    +inputReadOnly("Серия и номер",'readonly', '0311 521125')
+                div
+                    +inputReadOnly("Снилс",'readonly', '153-123-12-33')
+                div(class='mt-4')
+                    h3(class="font-semibold text-lg leading-tight") Адрес постоянной регистрации
+                    div(class="mt-2")
+                        +inputReadOnly("Адрес постоянной регистрации",'readonly', 'Краснодар, ул. Московская 144/2')
+                div
+                    h3(class="font-semibold text-lg leading-tight") Адрес фактического проживания
+                    div(class="mt-2")
+                        +inputReadOnly("Адрес фактического проживания",'readonly', 'Краснодар, ул. Московская 144/2')
+                div
+                    h3(class="font-semibold text-lg") Контакты
+                    div(class="mt-2")
+                        +inputEdit('Электронная почта', 'input-edit', 'live-dsgn@yandex.ru')
+                    div(class='text-sm text-87 mt-1.5') Ваш актуальный адрес электронной почты
+                div
+                    div(class="mt-2")
+                        +inputEdit('Мобильный телефон', 'input-edit phone-mask', '+7(928) 468-20-61')
+                    div(class='text-sm text-87 mt-1.5') Ваш актуальный номер телефона
+                div
+                    +input('Код из СМС')
+                div(class='text-sm text-87 text-center') Получить новый код
+                div
+                    +lk-btn('Запросить замену данных')
