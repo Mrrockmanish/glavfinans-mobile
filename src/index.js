@@ -7,6 +7,8 @@ import mask from '../node_modules/jquery.maskedinput/src/jquery.maskedinput'
 
 
 $('.phone-mask').mask("+7(999) 999-9999");
+$('.pass-serial-mask').mask("9999");
+$('.pass-number-mask').mask("999999");
 $('.serial-and-number').mask("9999 999999");
 $('.pass-number-mask').mask("999999");
 $('.date-mask').mask("99.99.9999");
@@ -133,6 +135,7 @@ $('.no-save-confirm').on('click', function (){
 
 // вопросы
 $('.question__caption').on('click', function (){
+  $(this).toggleClass('text-8A text-main font-semibold');
   $(this).find('.question__chevron').toggleClass('rotate-x-180');
   $(this).closest('.question').find('.question__content').slideToggle();
 })

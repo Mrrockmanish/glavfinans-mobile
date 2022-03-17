@@ -205,6 +205,12 @@ a {
   transform: rotateX(180deg);
 }
 
+.input-success::before {
+  content: url("../images/elements/green-check.svg");
+  position: absolute;
+  right: s(20);
+}
+
 .style-input-label {
   left: s(16);
   top: s(18);
@@ -297,8 +303,8 @@ a {
 .short-logo {
   border-radius: s(4);
   &__center {
-    width: s(25);
-    height: s(25);
+    width: s(35);
+    height: s(35);
     top: s(20);
     left: s(20);
     animation-name: clock;

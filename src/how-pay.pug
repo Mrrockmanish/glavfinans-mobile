@@ -1,6 +1,40 @@
 extends main
-
 block content
     main(class='relative pt-8 pb-24')
         div(class='container')
-            h1(class="text-2xl font-semibold") Соломыкин Артём Андреевич
+            h1(class="text-2xl font-semibold mb-2") Как оплатить займ
+            div(class='text-87')
+                p Для Вашего удобства сервис Главфинанс предоставляет различные способы возврата суммы займа. Выберите то средство оплаты, которое полностью соответствует Вашим предпочтениям и четко следуйте указанным инструкциям. Вы можете оплатить всю сумму полностью или продлить займ, оплатив только проценты. В данном случае срок пользования деньгами будет продлён.
+            div(class='bg-white rounded-lg px-5 py-3 items-center mt-6')
+                h2(class='text-lg font-semibold mb-2') Рассрочка платежа
+                div(class='text-87')
+                    p Если вы не располагаете всей суммой, вы можете воспользоваться акцией «У вас просрочка? У нас рассрочка!» и погасить оставшуюся задолженность по графику. Мы делим остаток на 6 платежей и 3 месяца. Основной долг уменьшается с кажым платежом!
+                div(class='mt-4')
+                    +lk-btn-blue('Взять займ')
+            h2(class='text-lg font-semibold mb-4 mt-8') Способы погашения
+            div(class='grid gap-y-4 mt-6')
+                div(class='bg-white rounded-lg px-5 py-3 items-center')
+                    div(class='flex items-center')
+                        div(class='text-5xl w-8 text-[#E3E3E3] leading-none mr-4') 1
+                        div(class='font-semibold text-base leading-tight') Банковскими картами Visa, MasterCard, Мир,Maestro
+                    div(class='text-87 mt-2') От нескольких секунд до трёх дней в зависимости от банка
+                    div(class="grid grid-cols-4 gap-4 justify-between items-center max-w-[33rem] mt-3")
+                        img(src=require('./images/examples/visa.png') alt="")
+                        img(src=require('./images/examples/mir.png') alt="")
+                        img(src=require('./images/examples/master.png') alt="")
+                        img(src=require('./images/examples/maestro.png') alt="")
+                div(class='bg-white rounded-lg px-5 py-3 items-center')
+                    div(class='flex items-center')
+                        div(class='text-5xl w-8 text-[#E3E3E3] leading-none mr-4') 2
+                        div(class='font-semibold text-base leading-tight') Через систему Qiwi
+                    div(class='text-87 mt-2') Через систему Qiwi с помощью сети терминалов, или через <a href="https://qiwi.com/" target="_blank">сайт Qiwi</a>
+                    div(class="mt-3")
+                        img(src=require('./images/elements/qiwi.svg') alt="")
+                div(class='bg-white rounded-lg px-5 py-3 items-center')
+                    div(class='flex items-center')
+                        div(class='text-5xl w-8 text-[#E3E3E3] leading-none mr-4') 3
+                        div(class='font-semibold text-base leading-tight') Через систему Элекснет
+                    div(class='text-87 mt-2') Через систему Элекснет с помощью сети терминалов, или через <a href="elecsnet.ru" target="_blank">сайт Элекснет</a>
+                    div(class="mt-3")
+                        img(src=require('./images/elements/eleksnet.svg') alt="")
+

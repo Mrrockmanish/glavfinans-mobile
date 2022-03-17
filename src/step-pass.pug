@@ -15,6 +15,13 @@ block content
             form(class="mt-3")
                 div(class="grid gap-y-4")
                     div
+                        div(class='grid grid-cols-2 gap-x-4')
+                            div
+                                +input('Серия', 'pass-serial-mask')
+                            div
+                                +input('Номер', 'pass-number-mask')
+                        +inputCaption('Точно как в паспорте')
+                    div
                         +input('Серия и номер', 'serial-and-number')
                         +inputCaption('Точно как в паспорте')
                     div
@@ -96,7 +103,7 @@ block content
                             +info-btn
                 div(class='mt-8')
                     div
-                        +input('Код из СМС')
+                        +inputSuccess('Код из СМС')
                         div(class='text-87 text-sm text-center cursor-pointer mt-4') Получить СМС код
                 div(class="mt-6")
                     +btnGradientDisabled('Продолжить')
