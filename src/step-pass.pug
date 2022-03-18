@@ -76,7 +76,7 @@ block content
                             +inputCaption('Укажите фактический адрес места работы')
                         div
                             +input('Телефон организации', 'phone-mask')
-                            +inputCaption('В 96% случаев мы не звоним по этому номеру, нужен для чего то там (придумать текст)')
+                            +inputCaption('В 96% случаев мы не звоним по этому номеру. Реальный номер повышает вероятность одобрения.')
                         div
                             +input('Ваша должность')
                             +inputCaption('Кем вы работаете в организации')
@@ -101,9 +101,5 @@ block content
                             +checkbox-gray
                             div(class="text-sm text-87") Получение информации
                             +info-btn
-                div(class='mt-8')
-                    div
-                        +inputSuccess('Код из СМС')
-                        div(class='text-87 text-sm text-center cursor-pointer mt-4') Получить СМС код
-                div(class="mt-6")
+                div(class="mt-8")
                     +btnGradientDisabled('Продолжить')

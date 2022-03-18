@@ -56,16 +56,20 @@ module.exports = {
       template: "./src/up-rating.pug"
     }),
     new HtmlWebpackPlugin({
-      filename: 'up-rating-2.html',
-      template: "./src/up-rating-2.pug"
-    }),
-    new HtmlWebpackPlugin({
       filename: 'questions.html',
       template: "./src/questions.pug"
     }),
     new HtmlWebpackPlugin({
-      filename: 'clarify.html',
-      template: "./src/clarify.pug"
+      filename: 'review.html',
+      template: "./src/review.pug"
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'review-2.html',
+      template: "./src/review-2.pug"
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'success.html',
+      template: "./src/success.pug"
     }),
     new HtmlWebpackPlugin({
       filename: 'add-card.html',
@@ -130,6 +134,14 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'calc-v-2.html',
       template: "./src/calc-v-2.pug"
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'fail.html',
+      template: "./src/fail.pug"
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'fail-2.html',
+      template: "./src/fail-2.pug"
     })
   ],
   module: {

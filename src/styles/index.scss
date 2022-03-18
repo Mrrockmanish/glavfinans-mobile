@@ -18,7 +18,7 @@ $root-font-size: 16;
 }
 
 html {
-  font-family: 'Kinetika';
+  font-family: 'Montserrat';
   font-size: 100%;
 
   @media (min-width: 375px) {
@@ -117,6 +117,10 @@ a {
   }
 }
 
+.rounded-90 {
+  border-radius: s(90);
+}
+
 .gradient-btn {
   background: linear-gradient(180deg, #0D4DA1 0%, #00AEEF 100%);
   border-radius: s(90);
@@ -207,12 +211,17 @@ a {
   transform: rotateX(180deg);
 }
 
-.input-success::before {
-  content: url("../images/elements/green-check.svg");
-  position: absolute;
-  right: s(20);
-  top: 50%;
-  transform: translateY(-50%);
+.input-validate {
+  &::before {
+    position: absolute;
+    right: s(20);
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &.success::before {
+    content: url("../images/elements/success-bage.svg");
+  }
 }
 
 .style-input-label {
@@ -374,4 +383,21 @@ a {
 .period__count::-webkit-outer-spin-button,
 .period__count::-webkit-inner-spin-button {
   -webkit-appearance: none;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.simple-list {
+  list-style-type: disc;
+  list-style-position: outside;
+  padding-left: 1rem;
+  li {
+    display: list-item;
+  }
 }

@@ -14,15 +14,17 @@ block content
                         div(class="text-sm text-black") Общие условия договора
                     a(href="#" class="flex items-start max-w-[18rem] hover:opacity-80")
                         img(src=require('./images/elements/document.svg') class="flex-shrink-0 mr-4")
-                        div(class="text-sm text-black") Шаблон индивидуальных условий договора
+                        div(class="text-sm text-black") Индивидуальные условия договора
                     a(href="#" class="flex items-start max-w-[18rem] hover:opacity-80")
                         img(src=require('./images/elements/document.svg') class="flex-shrink-0 mr-4")
                         div(class="text-sm text-black") Заявка на предоставление займа
             form(class='mt-8')
                 div
-                    +input('Код из СМС')
+                    +inputValidate('Код из СМС')
                     +inputCaption('Направили СМС на номер +7 928 468 20 61')
+                    div(class="text-D3 text-sm mt-1.5") Введен неверный код
                 div(class="mt-6")
-                    +btnGradient('Подтверждаю')
+                    +btnGradient('Подписать')
             div(class='text-center mt-4')
                 a(href='#' class='text-base text-center font-semibold hover:opacity-80') Получить новый код через 30 сек
+

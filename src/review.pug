@@ -1,0 +1,13 @@
+extends main
+
+block content
+    main(class='relative pt-8 pb-24')
+        div(class='container')
+            div(class="bg-white rounded-20px shadow-plate text-center px-4 py-6")
+                +title('Рассматриваем вашу заявку')
+                div(class="text-center text-base text-87 mt-8")
+                    | Возможно, в процессе рассмотрения с вами свяжется наш специалист для уточнения деталей
+                div(class='mt-5')
+                    include pug/_short-logo
+            div(class='text-lg font-semibold mt-12 mb-6') Ответы на частые вопросы
+            include pug/_questions-block

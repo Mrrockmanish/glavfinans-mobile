@@ -4,21 +4,19 @@ block content
     main(class='relative pt-8 pb-24')
         div(class='container')
             +title('Повысить рейтинг легко!')
-            div(class='text-87 mt-4') Рекомендуем оформить услугу <a href="#">страхования</a>, это не дорогой способ защитить вас от возможных трудностей с погашением займа
+            div(class='text-87 mt-4') Рекомендуем оформить услугу <a href="#" class="text-blue">страхования</a> от нашего партнера, это простой способ уменьшить риск неплатежеспособности всего за 1000 руб.
             div(class='mt-4')
                 +btnGradient("Хочу застраховаться")
                 div(class='text-center mt-4')
-                    a(href='#' class='no-save text-center text-gray hover:opacity-80') Мне не нужна страховка
+                    +btnBlue('Мне не нужна страховка', 'no-save')
                 div(class='bg-white rounded-20px py-6 px-4 mt-6')
-                    h3(class='text-lg font-semibold mb-2') Преимущества страховки
+                    h3(class='text-lg font-semibold mb-2') Партнёрские предложения
                     div(class='text-gray')
-                        p Клиентам, чьи карты застрахованы от мошенничества и утраты у нашего партнера – "Финзащита" предоставляется отсрочка погашения займа на 15 дней по промокоду.
-                        p Допустим, у вас сегодня срок погашения займа, но вы не располагаете достаточной суммой для его полного погашения вместе с процентами. Так же, у вас нет достаточных оснований, чтобы рассчитывать на предоставление реструктуризации в силу закона. В этом случае вам на помощь придет акция «Промокод от партнёра», проводимая совместно с нашими партнерами – "Финзащита" и Страховой компанией «ВСК».
         div(class="white-container-dialog hidden absolute w-full h-full bg-black mx-auto left-0 right-0 top-0")
             div(class='relative w-full h-full')
                 div(class='absolute left-0 right-0 mx-auto bg-white rounded-20px p-6 max-w-[28rem]')
                     h2(class="text-lg font-semibold mb-2") Вы уверены?
-                    p(class="text-gray") Клиентам, чьи карты застрахованы от мошенничества и утраты у нашего партнера – "Финзащита" предоставляется отсрочка погашения займа на 15 дней по промокоду.
+                    p(class="text-gray") Можем повысит рейтинг.
                     div(class="mt-6 max-w-[20rem] mx-auto")
-                        +btnGradient('Хочу застраховаться')
-                    div(class='no-save-confirm text-sm text-gray text-center mt-4 cursor-pointer hover:opacity-80') Мне не нужна страховака
+                        +btnGradient('Да, повысить рейтинг')
+                    div(class='no-save-confirm text-sm text-gray text-center mt-4 cursor-pointer hover:opacity-80') Нет, повышать не нужно

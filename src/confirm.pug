@@ -3,13 +3,15 @@ extends main
 block content
     main(class='relative pt-8 pb-24')
         div(class='container')
-            div(class='bg-white rounded-20px shadow-plate text-center px-4 py-6')
-                h1(class='text-2xl font-semibold') Ваша заявка одобрена
-                div(class='text-87 mt-4')
-                    p Статус займа, способы погашения и другая информация доступна в вашем личном кабинете
-                div(class='mt-4')
-                    +btnGradient('Перейти в личный кабинет')
-            div(class='mt-8')
-                h3(class='text-lg font-semibold') Ответы на частые вопросы
-            div(class='mt-4')
-                include pug/_questions-block
+            +title('Подтверждение заявки на займ')
+            div(class="text-center text-sm text-87 mt-8")
+                | Для подтверждения условий заявки и номера телефона введите код из СМС
+            form(class='mt-8')
+                div
+                    +inputValidate('Код из СМС')
+                    +inputCaption('Направили СМС на номер +7 928 468 20 61')
+                    div(class="text-D3 text-xs mt-1.5") Введен неверный код
+                div(class="mt-6")
+                    +btnGradient('Подтверждаю')
+            div(class='text-center mt-4')
+                a(href='#' class='text-base text-center font-semibold hover:opacity-80') Получить новый код через 30 сек

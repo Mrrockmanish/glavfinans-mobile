@@ -243,5 +243,19 @@ $(document).ready(function (){
     $('.mobile-nav').fadeToggle();
   });
 
+
+  // галочка при вооде смс
+  $('.input-validate').on('keyup', '.style-input', function (){
+
+    const count = $(this).val();
+
+    if (count.length == 4) {
+      $(this).closest('.input-validate').addClass('success')
+    } else {
+      $(this).closest('.input-validate').removeClass('success')
+    }
+
+  });
+
 });
 

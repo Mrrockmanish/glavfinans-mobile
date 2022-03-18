@@ -1,0 +1,13 @@
+extends main
+
+block content
+    main(class='relative pt-8 pb-24')
+        div(class='container')
+            div(class="bg-white rounded-20px shadow-plate text-center px-4 py-6")
+                +title('Поздравляем!')
+                div(class="text-center text-sm text-87 mt-8")
+                    p Ваш займ одобрен. Для получения денег осталось только привязать именную банковскую карту и загрузить фото паспорта. При возникновении вопросов. Вы можете обратиться по бесплатному номеру, указанному ниже.
+                div(class='text-center')
+                    a(href="tel:+78007773705" class='text-blue text-xl') 8 800 777 37 05
+                div(class='mt-5')
+                    include pug/_short-logo

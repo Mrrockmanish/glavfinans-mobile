@@ -1,0 +1,17 @@
+extends main
+
+block content
+    main(class='relative pt-8 pb-24')
+        div(class='container')
+            div(class="bg-white rounded-20px shadow-plate text-center px-4 py-6")
+                +title('Решение по вашей заявке')
+                div(class="text-center text-sm text-87 mt-8")
+                    | К сожалению, вам было отказано по причине недостаточно высокого кредитного рейтинга. О том, что влияет на рейтинг и как его можно повысить читайте ниже.
+                div(class='mt-4')
+                    +btnGradient("Взять займ у партнеров")
+                    div(class='text-center mt-4')
+                        +btnBlue('Переподать заявку на займ')
+                div(class='mt-5')
+                    include pug/_short-logo
+            div(class='text-lg font-semibold mt-12 mb-6') Ответы на частые вопросы
+            include pug/_questions-block

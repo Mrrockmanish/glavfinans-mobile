@@ -1,0 +1,16 @@
+extends main
+
+block content
+    main(class='relative pt-8 pb-24')
+        div(class='container')
+            div(class="bg-white rounded-20px shadow-plate text-center px-4 py-6")
+                +title('Заявка отправлена на дальнейшие рассмотрение!')
+                div(class="text-center text-sm text-87 mt-8")
+                    p Нам нужно с вами связаться для уточнения информации
+                    p Ожидайте звонок в течение 5 минут или позвоните по номеру
+                div(class='text-center')
+                    a(href="tel:+78007773705" class='text-blue text-xl') 8 800 777 37 05
+                div(class='mt-5')
+                    include pug/_short-logo
+            div(class='text-lg font-semibold mt-12 mb-6') Ответы на частые вопросы
+            include pug/_questions-block
