@@ -39,6 +39,8 @@ body {
   font-weight: 400;
   word-wrap: break-word;
   line-height: 1.14;
+  position: relative;
+  padding-top: s(50);
 }
 
 
@@ -209,6 +211,8 @@ a {
   content: url("../images/elements/green-check.svg");
   position: absolute;
   right: s(20);
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .style-input-label {
@@ -345,4 +349,29 @@ a {
 .logo-mobile {
   width: s(84);
   height: s(27);
+}
+
+.sum__plus,.sum__minus {
+  &.disabled {
+    border-color: #8A8A8A;
+    color: #8A8A8A;
+  }
+}
+
+.sum__count {
+  -moz-appearance:textfield;
+}
+
+.period__count {
+  -moz-appearance:textfield;
+}
+
+.sum__count::-webkit-outer-spin-button,
+.sum__count::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.period__count::-webkit-outer-spin-button,
+.period__count::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }

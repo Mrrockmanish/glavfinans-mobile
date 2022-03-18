@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const webpack = require('webpack');
 
 let mode = 'development'
 if (process.env.NODE_ENV === 'production') {
@@ -12,7 +13,7 @@ module.exports = {
   mode: mode,
   entry: {
     scripts: './src/index.js',
-    user: './src/user.js',
+    // user: './src/user.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -27,6 +28,10 @@ module.exports = {
     },
   },
   plugins: [
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery'
+    }),
     new MiniCssExtractPlugin({
       filename: 'css/styles.css'
     }),
@@ -121,6 +126,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'type.html',
       template: "./src/type.pug"
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'calc-v-2.html',
+      template: "./src/calc-v-2.pug"
     })
   ],
   module: {

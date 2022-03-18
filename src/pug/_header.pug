@@ -1,4 +1,4 @@
-header(class='header bg-white relative shadow-header py-3 z-50')
+header(class='header fixed top-0 left-0 w-full bg-white shadow-header py-2 z-50')
     div(class="container flex items-center justify-content-between")
         div
             img(src=require('../images/elements/logo.svg') class="logo-mobile" alt='Глав Финанс')
@@ -11,8 +11,34 @@ header(class='header bg-white relative shadow-header py-3 z-50')
                 <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10.75 4.88889C10.75 5.65804 10.5301 6.40992 10.118 7.04944C9.70596 7.68896 9.12029 8.18741 8.43506 8.48175C7.74984 8.7761 6.99584 8.85311 6.26841 8.70305C5.54098 8.553 4.8728 8.18262 4.34835 7.63875C3.8239 7.09488 3.46675 6.40194 3.32206 5.64757C3.17736 4.8932 3.25162 4.11128 3.53545 3.40068C3.81928 2.69007 4.29993 2.08271 4.91661 1.6554C5.5333 1.22808 6.25832 1 7 1C7.99456 1 8.94839 1.40972 9.65165 2.13903C10.3549 2.86834 10.75 3.85749 10.75 4.88889ZM7.75 8.77778H6.25C4.85761 8.77778 3.52226 9.35139 2.53769 10.3724C1.55312 11.3935 1 12.7783 1 14.2222V14.2222C1 14.4285 1.07902 14.6263 1.21967 14.7722C1.36032 14.9181 1.55109 15 1.75 15H12.25C12.4489 15 12.6397 14.9181 12.7803 14.7722C12.921 14.6263 13 14.4285 13 14.2222C13 12.7783 12.4469 11.3935 11.4623 10.3724C10.4777 9.35139 9.14239 8.77778 7.75 8.77778V8.77778Z" stroke="#444444" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-            div(class='flex items-center justify-self-end justify-center w-8 h-8 rounded-full border border-main text-main')
+            div(class='header__bars flex items-center justify-self-end justify-center w-8 h-8 rounded-full border border-main text-main')
                 <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1 1H15M1 11H15H1ZM1 6H15H1Z" stroke="#444444" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
+nav(class='mobile-nav hidden fixed bg-white flex-col w-full h-full top-0 left-0 px-4 z-30 pt-[3rem]')
+     div(class='flex flex-col w-full h-full overflow-y-auto')
+        ul(class="grid gap-y-4 pt-8 pb-4")
+            li(class='aside-li active flex items-start relative pb-1')
+                a(href='#' class='text-lg hover:opacity-80') Новая заявка
+                div(class='rounded-full flex items-center justify-center w-4 h-4 text-white text-xs font-semibold bg-5C ml-2') 6
+            li(class='aside-li flex items-start relative pb-1')
+                a(href='#' class='text-lg hover:opacity-80') Мои займы
+            li(class='aside-li flex items-start relative pb-1')
+                a(href='#' class='text-lg hover:opacity-80') Мои данные
+            li(class='aside-li flex items-start relative pb-1')
+                a(href='#' class='text-lg hover:opacity-80') Акции
+            li(class='aside-li flex items-start relative pb-1')
+                a(href='#' class='text-lg hover:opacity-80') Уведомления
+            li(class='aside-li flex items-start relative pb-1')
+                a(href='#' class='text-lg hover:opacity-80') Корреспонденция
+                div(class='rounded-full flex items-center justify-center w-4 h-4 text-white text-xs font-semibold bg-5C ml-2') 6
+            li(class='aside-li flex items-start relative pb-1')
+                a(href='#' class='text-lg hover:opacity-80') Связаться с нами
+        div(class='text-base mb-2 pt-4')
+            a(href='#' class='hover:opacity-80') Выйти из профиля
+        div(class='text-2xl text-center mt-auto pb-4')
+             a(href='tel:+78003334788') 8-800-333-47-88
+             div(class='text-8A text-xs') Круглосуточно, без выходных
+
+
 
