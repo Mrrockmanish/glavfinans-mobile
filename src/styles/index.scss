@@ -402,3 +402,19 @@ input::-webkit-inner-spin-button {
     margin-bottom: s(4);
   }
 }
+
+ol.counter {
+  counter-reset: item;
+  padding-left: 0;
+  margin-top: s(20);
+}
+
+ol.counter > li {
+  display: block;
+  margin-bottom: 15px;
+}
+
+ol.counter > li:before {
+  content: counters(item, ".") ". ";
+  counter-increment: item;
+}
