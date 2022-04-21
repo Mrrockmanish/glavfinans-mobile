@@ -140,6 +140,26 @@ module.exports = {
       template: "./src/fail.pug"
     }),
     new HtmlWebpackPlugin({
+      filename: 'normativs.html',
+      template: "./src/normativs.pug"
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'politic.html',
+      template: "./src/politic.pug"
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'repayment.html',
+      template: "./src/repayment.pug"
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'require.html',
+      template: "./src/require.pug"
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'info-docs.html',
+      template: "./src/info-docs.pug"
+    }),
+    new HtmlWebpackPlugin({
       filename: 'fail-2.html',
       template: "./src/fail-2.pug"
     })

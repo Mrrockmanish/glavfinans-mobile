@@ -1,0 +1,16 @@
+extends main
+
+block content
+    main(class='relative pt-8 pb-24')
+        div(class='container')
+            h1(class='text-2xl font-semibold') Погашение займа онлайн
+            form(class="mt-8")
+                div(class="grid gap-y-4")
+                    div
+                        +input('Номер телефона', 'phone-mask')
+                        +inputCaption('Укажите тот номер, с которого вы оформляли займ')
+                    div
+                        +input-date('Дата рождения*', 'date-mask')
+                        +inputCaption('ДД.ММ.ГГ')
+                    div
+                        +btnGradient('Найти займ')
