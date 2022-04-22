@@ -1,41 +1,41 @@
 mixin calc-sm-v-2(addClass)
     form(class=`${addClass} flex-shrink-0 bg-white rounded-3xl py-6 px-5`)
         div(class="text-xl font-semibold") Выберите сумму и срок займа
-        div(class="text-sm mt-2 ") Одобряем 91% при регистрации через Госуслуги
-            div
-                div(class="flex justify-between items-center mt-4")
-                    div(class="text-sm") Сумма займа
-                    div(class="text-5C text-xs") до 30 000 руб.
-                div(class='mt-4')
-                    div(class="sum flex")
-                        div(class="sum__minus w-8 h-8 border border-blue rounded-full flex items-center justify-center font-semibold text-base leading-none flex-shrink-0") -
-                        div(class='px-2 flex-grow')
-                            label(class="border border-blue h-8 rounded-[2rem] flex flex-grow items-center justify-center overflow-hidden text-base font-semibold px-4")
-                                input(type="number" name="sum" value="30000" class="sum__count font-semibold text-base text-right max-w-[4rem] mr-1")
-                                div руб.
-                        div(class="sum__plus w-8 h-8 border border-blue rounded-full flex items-center justify-center font-semibold text-base leading-none flex-shrink-0") +
-                div(class='mt-6')
-                    div(class="period flex")
-                        div(class="period__minus w-8 h-8 border border-blue rounded-full flex items-center justify-center font-semibold text-base leading-none flex-shrink-0") -
-                        div(class='px-2 flex-grow')
-                            label(class="border border-blue h-8 rounded-[2rem] flex flex-grow items-center justify-center overflow-hidden text-base font-semibold px-4")
-                                input(type="number" name="period" value="30" class="period__count font-semibold text-base text-right max-w-[1.5rem] mr-1")
-                                div дней
-                        div(class="period__plus w-8 h-8 border border-blue rounded-full flex items-center justify-center font-semibold text-base leading-none flex-shrink-0") +
+        div
+            div(class="flex justify-between items-center mt-4")
+                div(class="text-sm") Сумма займа
+                div(class="text-5C text-xs") до 30 000 руб.
+            div(class='mt-4')
+                div(class="sum flex")
+                    div(class="sum__minus w-8 h-8 border border-blue rounded-full flex items-center justify-center font-semibold text-base leading-none flex-shrink-0") -
+                    div(class='px-2 flex-grow')
+                        label(class="border border-blue h-8 rounded-[2rem] flex flex-grow items-center justify-center overflow-hidden text-base font-semibold px-4")
+                            input(type="number" name="sum" value="30000" class="sum__count font-semibold text-base text-right max-w-[4rem] mr-1")
+                            div руб.
+                    div(class="sum__plus w-8 h-8 border border-blue rounded-full flex items-center justify-center font-semibold text-base leading-none flex-shrink-0") +
+            div(class='mt-6')
+                div(class="period flex")
+                    div(class="period__minus w-8 h-8 border border-blue rounded-full flex items-center justify-center font-semibold text-base leading-none flex-shrink-0") -
+                    div(class='px-2 flex-grow')
+                        label(class="border border-blue h-8 rounded-[2rem] flex flex-grow items-center justify-center overflow-hidden text-base font-semibold px-4")
+                            input(type="number" name="period" value="30" class="period__count font-semibold text-base text-right max-w-[1.5rem] mr-1")
+                            div дней
+                    div(class="period__plus w-8 h-8 border border-blue rounded-full flex items-center justify-center font-semibold text-base leading-none flex-shrink-0") +
 
-            div(class="border-t border-BD mt-4")
-                div(class="mt-4")
-                    div(class="flex items-center justify-between mt-4")
-                        div(class="text-sm") Вы возвращаете
-                        div(class="flex items-center justify-center px-4 h-6 text-white bg-blue rounded-[2rem]")
-                            span(class="text-base font-semibold") 16 000 руб.
-                    div(class="flex items-center justify-between mt-4")
-                        div(class="text-sm") До (включительно)
-                        div(class="flex items-center justify-center px-4 h-6 text-white bg-blue rounded-[2rem]")
-                            span(class="text-base font-semibold") 11.12.2021
-            div(class="mt-8")
-                button(type='submit' class="gradient-btn rounded-[6.8rem] flex items-center justify-center w-full h-12 text-white text-sm font-semibold hover:opacity-80") Получить деньги
-            div(class="text-center mt-6")
-                a(href="#" class="flex items-center justify-center text-xl hover:opacity-80")
-                    div(class='text-sm mr-4') Регистрация через
-                    img(src=require('./images/elements/gos.png') class="w-20")
+        div(class="border-t border-BD mt-4")
+            div(class="mt-4")
+                div(class="flex items-center justify-between mt-4")
+                    div(class="text-sm") Вы возвращаете
+                    div(class="flex items-center justify-center px-4 h-6 text-white bg-blue rounded-[2rem]")
+                        span(class="text-base font-semibold") 16 000 руб.
+                div(class="flex items-center justify-between mt-4")
+                    div(class="text-sm") До (включительно)
+                    div(class="flex items-center justify-center px-4 h-6 text-white bg-blue rounded-[2rem]")
+                        span(class="text-base font-semibold") 11.12.2021
+        div(class="mt-8")
+            button(type='submit' class="gradient-btn rounded-[6.8rem] flex items-center justify-center w-full h-12 text-white text-sm font-semibold hover:opacity-80") Получить деньги
+        div(class="text-center mt-6")
+            a(href="#" class="flex items-center justify-center text-xl hover:opacity-80")
+                div(class='text-sm font-semibold text-blue mr-3') Регистрация через
+                img(src=require('./images/elements/gos.png') class="w-20")
+            div(class="text-sm mt-2 ") +60% к вероятности одобрения заявки
