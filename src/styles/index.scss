@@ -418,3 +418,7 @@ ol.counter > li:before {
   content: counters(item, ".") ". ";
   counter-increment: item;
 }
+
+.ui-datepicker-trigger {
+  cursor: pointer;
+}

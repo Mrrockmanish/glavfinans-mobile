@@ -1,16 +1,17 @@
 import './styles/index.scss'
-import './styles/_query-ui-slider.scss'
+import './styles/jquery-ui-date-picker.css'
+import './styles/_ui-slider-custom.scss'
 import $ from "jquery";
 
 import slickCarousel from 'slick-carousel';
-import uiSlider from './js/jquery-ui-slider';
+import ui from './js/jquery-ui';
 import mask from '../node_modules/jquery.maskedinput/src/jquery.maskedinput'
 import punch from './js/jquery-ui-toch-punch'
 
 
 
 $(document).ready(function (){
-
+  // маски
   $('.phone-mask').mask("+7(999) 999-9999");
   $('.pass-serial-mask').mask("9999");
   $('.pass-number-mask').mask("999999");
@@ -22,6 +23,58 @@ $(document).ready(function (){
   $('.card-date-mask').mask('99/99');
   $('.cvv-mask').mask('999');
   $('.snils-mask').mask('999-999-99-99');
+
+
+  // календарик
+
+  /* Russian (UTF-8) initialisation for the jQuery UI date picker plugin. */
+  /* Written by Andrew Stromnov (stromnov@gmail.com). */
+  ( function( factory ) {
+    "use strict";
+
+    if ( typeof define === "function" && define.amd ) {
+
+      // AMD. Register as an anonymous module.
+      define( [ "../widgets/datepicker" ], factory );
+    } else {
+
+      // Browser globals
+      factory( jQuery.datepicker );
+    }
+  } )( function( datepicker ) {
+    "use strict";
+
+    datepicker.regional.ru = {
+      closeText: "Закрыть",
+      prevText: "&#x3C;Пред",
+      nextText: "След&#x3E;",
+      currentText: "Сегодня",
+      monthNames: [ "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
+        "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь" ],
+      monthNamesShort: [ "Янв", "Фев", "Мар", "Апр", "Май", "Июн",
+        "Июл", "Авг", "Сен", "Окт", "Ноя", "Дек" ],
+      dayNames: [ "воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота" ],
+      dayNamesShort: [ "вск", "пнд", "втр", "срд", "чтв", "птн", "сбт" ],
+      dayNamesMin: [ "Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб" ],
+      weekHeader: "Нед",
+      dateFormat: "dd.mm.yy",
+      firstDay: 1,
+      isRTL: false,
+      showMonthAfterYear: false,
+      yearSuffix: "" };
+    datepicker.setDefaults( datepicker.regional.ru );
+
+    return datepicker.regional.ru;
+
+  } );
+
+  $.datepicker.setDefaults( $.datepicker.regional[ "ru" ] );
+
+  $('.date-mask').datepicker({
+    showOn: "button",
+    buttonImage: require('./images/elements/calend.svg'),
+    buttonImageOnly: true,
+  });
 
 
 // курсор при вводе вначале
