@@ -331,5 +331,25 @@ $(document).ready(function (){
     $(this).closest('.offers').find('.offers__main-inner').slideToggle();
   });
 
+
+  // соглашение с условиям кредита
+
+  $('.credit-agree__check').on('change', function (){
+
+    if ($(this).is(':checked')) {
+
+      $(this).closest('.credit-agree').find('.credit-agree__open').find('input').prop('checked', true);
+
+    } else {
+      $(this).closest('.credit-agree').find('.credit-agree__open').find('input').prop('checked', false);
+    }
+
+  });
+
+  $('.credit-agree__more-toggle').on('click', function (){
+    $('.credit-agree__more-toggle-svg').toggleClass('rotate-180');
+    $(this).closest('.credit-agree').find('.credit-agree__open').slideToggle();
+  });
+
 });
 

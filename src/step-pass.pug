@@ -81,25 +81,41 @@ block content
                             +input('Ваша должность')
                             +inputCaption('Кем вы работаете в организации')
 
-                    div(class='grid gap-y-2 mt-8')
+                    div(class='credit-agree grid gap-y-2 mt-8')
                         div(class='flex items-start')
-                            +checkbox-blue
-                            div(class="text-sm text-87") Я соглашаюсь с <a href="#" class="text-blue">условиями Кредитора</a>
-                        div(class='flex items-start')
-                            +checkbox-gray
-                            div(class="text-sm text-87") Персональные данные
-                            +info-btn
-                        div(class='flex items-start')
-                            +checkbox-gray
-                            div(class="text-sm text-87") Запрос в БКИ
-                            +info-btn
-                        div(class='flex items-start')
-                            +checkbox-gray
-                            div(class="text-sm text-87") Уступка права
-                            +info-btn
-                        div(class='flex items-start')
-                            +checkbox-gray
-                            div(class="text-sm text-87") Получение информации
-                            +info-btn
+                            label(class='flex-shrink-0 mr-3')
+                                input(type='checkbox' checked class="credit-agree__check checkbox-blue hidden")
+                                span(class='checkbox-blue-custom flex items-center justify-center w-4 h-4 mt-0.5 cursor-pointer')
+                            div(class="text-sm text-87 cursor-pointer") Я соглашаюсь с <span class="credit-agree__more-toggle text-blue">условиями Кредитора</span>
+                            div(class="credit-agree__more-toggle transform self-start mt-2 flex-shrink-0 px-2 cursor-pointer")
+                                <svg class="credit-agree__more-toggle-svg" width="15" height="7" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L9 9L17 1" stroke="black"/>
+                                </svg>
+                        div(class="credit-agree__open hidden")
+                            div(class="grid gap-y-2")
+                                div(class='flex items-start')
+                                    label(class='flex-shrink-0 mr-3')
+                                        input(type='checkbox' checked disabled class="checkbox-gray hidden")
+                                        span(class='checkbox-gray-custom flex items-center justify-center w-4 h-4 mt-0.5 cursor-pointer')
+                                    div(class="text-sm text-87") Персональные данные
+                                    +info-btn
+                                div(class='flex items-start')
+                                    label(class='flex-shrink-0 mr-3')
+                                        input(type='checkbox' checked disabled class="checkbox-gray hidden")
+                                        span(class='checkbox-gray-custom flex items-center justify-center w-4 h-4 mt-0.5 cursor-pointer')
+                                    div(class="text-sm text-87") Запрос в БКИ
+                                    +info-btn
+                                div(class='flex items-start')
+                                    label(class='flex-shrink-0 mr-3')
+                                        input(type='checkbox' checked disabled class="checkbox-gray hidden")
+                                        span(class='checkbox-gray-custom flex items-center justify-center w-4 h-4 mt-0.5 cursor-pointer')
+                                    div(class="text-sm text-87") Уступка права
+                                    +info-btn
+                                div(class='flex items-start')
+                                    label(class='flex-shrink-0 mr-3')
+                                        input(type='checkbox' checked disabled class="checkbox-gray hidden")
+                                        span(class='checkbox-gray-custom flex items-center justify-center w-4 h-4 mt-0.5 cursor-pointer')
+                                    div(class="text-sm text-87") Получение информации
+                                    +info-btn
                 div(class="mt-8")
                     +btnGradientDisabled('Продолжить')
