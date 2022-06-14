@@ -162,6 +162,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'fail-2.html',
       template: "./src/fail-2.pug"
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'new-request.html',
+      template: "./src/new-request.pug"
     })
   ],
   module: {
