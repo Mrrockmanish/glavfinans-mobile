@@ -428,3 +428,16 @@ ol.counter > li:before {
 .ui-datepicker-calendar span {
   font-family: "Montserrat"!important;
 }
+
+.input-dropdown__list::-webkit-scrollbar {
+  width: 8px;               /* ширина scrollbar */
+}
+.input-dropdown__list::-webkit-scrollbar-track {
+  background: transparent;        /* цвет дорожки */
+  border: 1px solid #80A0CA;
+  border-radius: 20px;
+}
+.input-dropdown__list::-webkit-scrollbar-thumb {
+  background-color: #80A0CA;    /* цвет плашки */
+  border-radius: 20px;       /* закругления плашки */
+}
