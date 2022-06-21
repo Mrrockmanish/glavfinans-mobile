@@ -15,6 +15,37 @@ block content
                 div(class='text-gray text-base max-w-[40rem] mt-4')
                     p Для оформления реструктуризации оплатите начисленные на текущую дату проценты на сумму <strong>2400</strong> руб.
                     p Оставшуюся задолженность необходимо погашать по следующему графику
+                div(class="text-gray text-base")
+                    div(class="mt-4") Сумма займа: <strong class="text-main">6000 руб</strong>
+                    div(class="mt-4") Сумма возврата: <strong class="text-main">6500 руб</strong>
+                    div(class="mt-4") Процентная ставка: <strong class="text-main">1%</strong>
+                    div(class="mt-4") Срок: до  <strong class="text-main">6000 руб</strong>
+                div(class="border border-C4 rounded-md px-5 py-2 mt-6")
+                    div(class="font-semibold text-base") Плановый платеж
+                    div(class="text-gray")
+                        div(class="mt-4")
+                            div(class="font-medium") Дата платежа
+                            div(class="mt-0.5") 28.08.21
+                        div(class="mt-4")
+                            div(class="font-medium") Сумма платежа
+                            div(class="text-xl font-bold text-main") 5318 руб.
+                        div(class="self-end flex-shrink-0 mt-4")
+                            +lk-btn-blue('Внести заранее')
+                        div(class="text-xs mt-4")
+                            div % на просроченный долг <strong class="text-D3">51 руб.</strong>
+                            div Сумма пратежа по графику <strong class="text-D3">3435 руб.</strong>
+                    div(class="mt-4 pt-2 text-sm text-gray border-t border-C4") При внесении средств ранее даты платежа сумма будет заразервирована и списана в соответствие с графиком
+                div(class="border border-C4 rounded-md px-5 py-2 mt-4")
+                    div(class="font-semibold text-base") Досрочное погащение
+                    div(class="text-gray")
+                        div(class="mt-4")
+                            div(class="font-medium") Дата платежа
+                            div(class="mt-0.5") сегодня
+                        div(class="mt-4")
+                            div(class="font-medium") Сумма платежа
+                            div(class="text-base border border-blue rounded-lg px-5 py-1 w-full mt-1") 5318 руб.
+                        div(class="self-end flex-shrink-0 mt-4")
+                            +lk-btn-blue('Внести сегодня')
                 h4(class='text-base font-semibold mt-5') График платежей
                 div(class='max-w-[34rem] overflow-auto pb-3 mt-4')
                     table(class='lk-table min-w-[28rem] text-sm text-gray text-center w-full')
@@ -28,13 +59,18 @@ block content
                             tr
                                 td 1
                                 td 28.08.21
-                                td 4000
-                                td 4000
+                                td
+                                    div(class="flex w-full justify-center")
+                                        div 4000
+                                        +info-btn
+                                td(class='text-D3')
+                                    strong 0
                             tr
                                 td 2
                                 td 28.08.21
                                 td 4000
-                                td 4000
+                                td
+                                    div(class="px-4 py-1 text-white bg-[#4DB45E] rounded-[2.5rem]") Оплачен
                             tr
                                 td 3
                                 td 28.08.21
