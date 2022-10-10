@@ -1,0 +1,39 @@
+extends main
+
+block content
+    main(class='relative pt-8 pb-24')
+        div(class='container')
+            h1(class="text-2xl font-semibold") Соломыкин Артём Андреевич
+            h4(class='text-base font-semibold mt-4') Уведомления
+            div(class='mt-4 grid gap-y-4')
+                div
+                    +input('Фамилия', '', 'alert-error')
+                    +inputCaption('Как в паспорте')
+                div
+                    +input('Фамилия', '', 'alert-success')
+                    +inputCaption('Как в паспорте')
+                div
+                    +input('Фамилия', '', 'alert-info')
+                    +inputCaption('Как в паспорте')
+                div
+                    +input('Фамилия', '', 'alert-light')
+                    +inputCaption('Как в паспорте')
+                div(class="alert-error rounded-lg px-5 py-4")
+                    h4(class="font-semibold text-xl") Займ по договору №12312849109
+                    div(class="text-sm mt-2 text-8A") Уважаемая Виктория Викторовна! Оставшуюся задолженность необходимо погашать по следующему графику
+                div(class="alert-success rounded-lg px-5 py-4")
+                    h4(class="font-semibold text-xl") Займ по договору №12312849109
+                    div(class="text-sm mt-2 text-8A") Уважаемая Виктория Викторовна! Оставшуюся задолженность необходимо погашать по следующему графику
+                div(class="alert-info rounded-lg px-5 py-4")
+                    h4(class="font-semibold text-xl") Займ по договору №12312849109
+                    div(class="text-sm mt-2 text-8A") Уважаемая Виктория Викторовна! Оставшуюся задолженность необходимо погашать по следующему графику
+                div(class="alert-light rounded-lg px-5 py-4")
+                    h4(class="font-semibold text-xl") Займ по договору №12312849109
+                    div(class="text-sm mt-2 text-8A") Уважаемая Виктория Викторовна! Оставшуюся задолженность необходимо погашать по следующему графику
+                div
+                    a(href='#' class='is-loading gradient-btn font-normal flex items-center justify-center w-full px-3 text-white text-sm h-12 hover:opacity-80 transition duration-300')
+                        div(class="loader-icon flex-shrink-0 mr-2")
+                            <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.3973 4.24692C14.088 1.1816 7.37406 2.92202 4.38951 8.09142C1.40495 13.2608 3.25467 19.9455 8.56397 23.0108C11.6685 24.8032 15.2573 24.9532 18.3001 23.7309C18.8568 23.5073 19.4927 23.7768 19.7204 24.3329C19.9482 24.889 19.6815 25.521 19.1249 25.7446C15.4808 27.2084 11.1865 27.0268 7.48064 24.8872C1.15232 21.2335 -1.09683 13.2304 2.5 7.00052C6.09683 0.770617 14.1523 -1.28312 20.4806 2.37053C23.5335 4.1331 25.6362 6.90687 26.5917 10.0032C26.7687 10.5771 26.4463 11.1825 25.8715 11.3555C25.2968 11.5285 24.6872 11.2036 24.5102 10.6298C23.7119 8.04289 21.9559 5.72413 19.3973 4.24692Z" fill="white"/>
+                            </svg>
+                        div Продолжить

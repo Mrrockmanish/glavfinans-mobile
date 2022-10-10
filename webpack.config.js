@@ -108,6 +108,10 @@ module.exports = {
       template: "./src/lk-alerts.pug"
     }),
     new HtmlWebpackPlugin({
+      filename: 'lk-notify.html',
+      template: "./src/lk-notify.pug"
+    }),
+    new HtmlWebpackPlugin({
       filename: 'lk-contacts.html',
       template: "./src/lk-contacts.pug"
     }),
