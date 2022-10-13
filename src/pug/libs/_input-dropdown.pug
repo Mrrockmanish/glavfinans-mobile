@@ -3,8 +3,8 @@ mixin input-dropdown(text, adClass)
         div(class="input-dropdown__input-wrap flex flex-grow items-center justify-between h-full pl-4")
             input(required type="text" name="example" class=`mt-2 input-dropdown__input pointer-events-none style-input ${adClass} relative text-sm w-full z-10 bg-transparent`)
             label(class="style-input-label absolute text-sm text-gray flex items-center")= text
-        div(class="flex-shrink-0 px-4")
-            <svg class="dropdown-icon" width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+        div(class="dropdown-icon flex-shrink-0 px-4 py-4")
+            <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1 1L9 9L17 1" stroke="black"/>
             </svg>
         div(class="input-dropdown__variants font-medium bg-F4 transform translate-y-full absolute border border-91 rounded-lg w-full bottom-0 left-0 z-20")

@@ -12,27 +12,37 @@ import punch from './js/jquery-ui-toch-punch'
 
 $(document).ready(function (){
 
-
-
   $('.input-dropdown__input-wrap').on('click', function (){
     $(this).closest('.input-dropdown').find('.input-dropdown__variants').show();
     $(this).closest('.input-dropdown').find('.dropdown-icon').addClass('open');
 
-    $(document).mouseup(function () {
-      $(".input-dropdown__variants").hide();
-      $('.dropdown-icon').removeClass('open');
+
+    $(document).mouseup(function (e){ // событие клика по веб-документу
+      let div = $(".input-dropdown"); // тут указываем ID элемента
+      if (!div.is(e.target) // если клик был не по нашему блоку
+        && div.has(e.target).length === 0) { // и не по его дочерним элементам
+        $('.input-dropdown__variants').hide(); // скрываем его
+        $('.dropdown-icon').removeClass('open');
+      }
     });
+
+
   })
 
   $('.input-dropdown__item').on('click', function (){
     let text = $(this).text();
     $(this).closest('.input-dropdown').find('.input-dropdown__input').val(text);
-    $(this).closest(".input-dropdown__variants").hide();
     $(this).closest('.input-dropdown').find('.input-dropdown__variants').hide();
+    $('.dropdown-icon').removeClass('open');
   })
 
 
-  $('.input-dropdown__input-wrap').on('click', '.dropdown-icon:not(.open)', function () {
+  $('.input-dropdown').on('click', '.dropdown-icon:not(.open)', function () {
+    $(this).closest('.input-dropdown').find('.input-dropdown__variants').show();
+    $(this).addClass('open');
+  })
+
+  $('.input-dropdown').on('click', '.dropdown-icon.open', function () {
     $(this).closest('.input-dropdown').find('.input-dropdown__variants').hide();
     $(this).removeClass('open');
   })
