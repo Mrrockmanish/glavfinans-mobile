@@ -494,3 +494,8 @@ ol.counter > li:before {
     transform: rotate(180deg);
   }
 }
+
+.input-dropdown__variants {
+  box-shadow: rgb(145 158 195) 0px 0px 0px 1px;
+  overflow: hidden;
+}

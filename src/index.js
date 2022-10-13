@@ -16,7 +16,7 @@ $(document).ready(function (){
 
   $('.input-dropdown__input-wrap').on('click', function (){
     $(this).closest('.input-dropdown').find('.input-dropdown__variants').show();
-    $(this).find('.dropdown-icon').addClass('open');
+    $(this).closest('.input-dropdown').find('.dropdown-icon').addClass('open');
 
     $(document).mouseup(function () {
       $(".input-dropdown__variants").hide();
@@ -28,11 +28,14 @@ $(document).ready(function (){
     let text = $(this).text();
     $(this).closest('.input-dropdown').find('.input-dropdown__input').val(text);
     $(this).closest(".input-dropdown__variants").hide();
-    $('.dropdown-icon').removeClass('open');
+    $(this).closest('.input-dropdown').find('.input-dropdown__variants').hide();
   })
 
 
-
+  $('.input-dropdown__input-wrap').on('click', '.dropdown-icon:not(.open)', function () {
+    $(this).closest('.input-dropdown').find('.input-dropdown__variants').hide();
+    $(this).removeClass('open');
+  })
 
   // маски
   $('.phone-mask').mask("+7(999) 999-9999");
