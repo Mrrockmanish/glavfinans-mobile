@@ -1,19 +1,20 @@
 mixin input-dropdown(text, adClass)
-    div(class="input-dropdown relative border border-91 flex items-center justify-between rounded-lg py-2 pl-4 pr-5 h-14 z-20")
-        input(required type="text" name="example" class=`style-input ${adClass} relative mt-2 text-base w-full z-10 bg-transparent`)
-        label(class="style-input-label absolute text-base text-gray flex items-center")= text
-        <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M1 1L9 9L17 1" stroke="black"/>
-        </svg>
-        div(class="font-medium bg-F4 transform translate-y-full absolute border border-91 rounded-lg w-full bottom-0 left-0 z-20")
+    div(class="input-dropdown relative border border-91 rounded-lg h-14 z-20")
+        div(class="input-dropdown__input-wrap flex items-center justify-between h-full pl-4 pr-5")
+            input(required type="text" name="example" class=`input-dropdown__input pointer-events-none style-input ${adClass} relative text-sm w-full z-10 bg-transparent`)
+            label(class="style-input-label absolute text-sm text-gray flex items-center")= text
+            <svg class="dropdown-icon" width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1L9 9L17 1" stroke="black"/>
+            </svg>
+        div(class="input-dropdown__variants font-medium bg-F4 transform translate-y-full absolute border border-91 rounded-lg w-full bottom-0 left-0 z-20")
             div(class="input-dropdown__list overflow-y-auto" style="max-height: 15rem")
-                div(class="cursor-pointer hover:bg-[#EAEAEA] pt-1.5 pb-1.5 px-4") Авиация
-                div(class="cursor-pointer hover:bg-[#EAEAEA] pt-1.5 pb-1.5 px-4") Авиация
-                div(class="cursor-pointer hover:bg-[#EAEAEA] pt-1.5 pb-1.5 px-4") Авиация
-                div(class="cursor-pointer hover:bg-[#EAEAEA] pt-1.5 pb-1.5 px-4") Авиация
-                div(class="cursor-pointer hover:bg-[#EAEAEA] pt-1.5 pb-1.5 px-4") Авиация
-                div(class="cursor-pointer hover:bg-[#EAEAEA] pt-1.5 pb-1.5 px-4") Авиация
-                div(class="cursor-pointer hover:bg-[#EAEAEA] pt-1.5 pb-1.5 px-4") Авиация
-                div(class="cursor-pointer hover:bg-[#EAEAEA] pt-1.5 pb-1.5 px-4") Авиация
-                div(class="cursor-pointer hover:bg-[#EAEAEA] pt-1.5 pb-1.5 px-4") Авиация
-                div(class="cursor-pointer hover:bg-[#EAEAEA] pt-1.5 pb-1.5 px-4") Авиация
+                div(class="input-dropdown__item cursor-pointer hover:bg-[#EAEAEA] pt-1.5 pb-1.5 px-4") Авиация1
+                div(class="input-dropdown__item cursor-pointer hover:bg-[#EAEAEA] pt-1.5 pb-1.5 px-4") Авиация2
+                div(class="input-dropdown__item cursor-pointer hover:bg-[#EAEAEA] pt-1.5 pb-1.5 px-4") Авиация3
+                div(class="input-dropdown__item cursor-pointer hover:bg-[#EAEAEA] pt-1.5 pb-1.5 px-4") Авиация4
+                div(class="input-dropdown__item cursor-pointer hover:bg-[#EAEAEA] pt-1.5 pb-1.5 px-4") Авиация5
+                div(class="input-dropdown__item cursor-pointer hover:bg-[#EAEAEA] pt-1.5 pb-1.5 px-4") Авиация6
+                div(class="input-dropdown__item cursor-pointer hover:bg-[#EAEAEA] pt-1.5 pb-1.5 px-4") Авиация7
+                div(class="input-dropdown__item cursor-pointer hover:bg-[#EAEAEA] pt-1.5 pb-1.5 px-4") Авиация8
+                div(class="input-dropdown__item cursor-pointer hover:bg-[#EAEAEA] pt-1.5 pb-1.5 px-4") Авиация9
+                div(class="input-dropdown__item cursor-pointer hover:bg-[#EAEAEA] pt-1.5 pb-1.5 px-4") Авиация10

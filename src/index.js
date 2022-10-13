@@ -11,6 +11,29 @@ import punch from './js/jquery-ui-toch-punch'
 
 
 $(document).ready(function (){
+
+
+
+  $('.input-dropdown__input-wrap').on('click', function (){
+    $(this).closest('.input-dropdown').find('.input-dropdown__variants').show();
+    $(this).find('.dropdown-icon').addClass('open');
+
+    $(document).mouseup(function () {
+      $(".input-dropdown__variants").hide();
+      $('.dropdown-icon').removeClass('open');
+    });
+  })
+
+  $('.input-dropdown__item').on('click', function (){
+    let text = $(this).text();
+    $(this).closest('.input-dropdown').find('.input-dropdown__input').val(text);
+    $(this).closest(".input-dropdown__variants").hide();
+    $('.dropdown-icon').removeClass('open');
+  })
+
+
+
+
   // маски
   $('.phone-mask').mask("+7(999) 999-9999");
   $('.pass-serial-mask').mask("9999");
