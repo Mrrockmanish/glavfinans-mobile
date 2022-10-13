@@ -47,6 +47,16 @@ block content
                     div
                         +inputEdit('Мобильный телефон', 'input-edit phone-mask', '+7 928 468-20-61')
                         +inputCaption('На этот номер вышлем СМС с решением')
+                    div(class="input-dropdown relative border border-91 flex items-center justify-between rounded-lg py-2 pl-4 pr-5 h-14 z-20")
+                        select(required type="text" name="example" class=`outline-none style-input relative mt-2 text-base w-full z-10 bg-transparent`)
+                            option(disabled selected) выбрать значение
+                            option опция1
+                            option опция2
+                            option опция3
+                            option опция4
+                        label(class="style-input-label absolute text-base text-gray flex items-center") Сфера деятельности
+
+
                 div(class="flex items-start mt-6")
                     +checkbox-blue
                     div(class='text-xs text-87') Я соглашаюсь с <a href="#" class="text-blue">условиями обработки</a> и использования персональных данных и разрешаю сделать запрос в бюро кредитных историй
