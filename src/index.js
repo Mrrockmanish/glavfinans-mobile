@@ -110,6 +110,8 @@ $(document).ready(function (){
     showOn: "button",
     buttonImage: require('./images/elements/calend.svg'),
     buttonImageOnly: true,
+    changeMonth: true,
+    changeYear: true
   });
 
 
